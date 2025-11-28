@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>STAY ORRA - A BOUTIQUE HOTEL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Transparent Header -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" style="transition:0.3s; background:transparent;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#" id="logoText"
+                style="color:white; font-weight:700; letter-spacing:1px;">
+                STAY ORRA
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2" id="navLinks">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">DESTINATIONS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">HOTELS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">EXPERIENCES</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">OFFERS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">MEMBERSHIPS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">MORE</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="fw-semibold" id="loginJoin" style="color:white;">LOGIN / JOIN</a>
+                    <a href="#" class="btn px-4 py-2 fw-semibold" id="bookBtn"
+                        style="background:#b99656; border:none; color:white;">BOOK A STAY</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+        <div class="hero-overlay">
+            
+        </div>
+
+        <!-- Booking Form Positioned Bottom Center -->
+<div class="container">
+    
+    <div class="booking-form shadow-lg p-4 rounded-1"
+         style="position:absolute; bottom:70px; left:50%; transform:translateX(-50%); z-index:10; 
+                background:white; backdrop-filter:blur(6px); width:90%; max-width:1100px;">
+
+        <div class="row g-3 align-items-center text-dark">
+          
+
+            <!-- Check-in -->
+            <div class="col-md-3">
+                <label class="fw-semibold">Check-in</label>
+                <input type="date" class="form-control rounded-3">
+            </div>
+
+            <!-- Check-out -->
+            <div class="col-md-3">
+                <label class="fw-semibold">Check-out</label>
+                <input type="date" class="form-control rounded-3">
+            </div>
+
+            <!-- Adults -->
+            <div class="col-md-2">
+                <label class="fw-semibold">Adults</label>
+                <select class="form-select rounded-3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                </select>
+            </div>
+
+            <!-- Children -->
+            <div class="col-md-2">
+                <label class="fw-semibold">Children</label>
+                <select class="form-select rounded-3">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                </select>
+            </div>
+
+            <!-- Room Category -->
+            <div class="col-md-4 mt-3">
+                <label class="fw-semibold">Room Category</label>
+                <select class="form-select rounded-3">
+                    <option>Super Deluxe Twin Room – ₹3200</option>
+                    <option>Executive Suite (City View) – ₹4500</option>
+                    <option>Premium Suite with Steam Bath – ₹5500</option>
+                    <option>Presidential Suite with Jacuzzi – ₹7000</option>
+                </select>
+            </div>
+
+            <!-- Search Btn -->
+            <div class="col-md-2 mt-4">
+                <button class="btn btn-dark w-100 rounded-3 px-4 py-2" 
+                        style="background:#b99656; border:none;">
+                    <i class="bi bi-search"></i> Search
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        <!-- Center bottom search button -->
+        <div style="position:absolute; bottom:40px; left:50%; transform:translateX(-50%); z-index:5;">
+           
+        </div>
+    </section>
+
+    <!-- Brand Highlight Section -->
+    <section class="text-center py-5" style="background:white; color:#4a4a4a;">
+        <div class="d-flex justify-content-center align-items-center mb-3" style="gap:20px;">
+            <span style="height:1px; width:80px; background:#b3b3b3;"></span>
+            <h1
+                style="font-family: 'Times New Roman', serif; font-size:42px; font-weight:400; letter-spacing:1px; color:#333;">
+                STAY ORRA — LUXURY REDEFINED
+            </h1>
+            <span style="height:1px; width:80px; background:#b3b3b3;"></span>
+        </div>
+
+        <p style="font-size:18px; max-width:900px; margin:auto; color:#555; line-height:1.7;">
+            Stay Orra continues to be celebrated as one of India's most elegant boutique hotel experiences —
+            recognised for its timeless design, warm hospitality, and unmatched comfort.
+        </p>
+    </section>
+
+    <!-- ROOM SECTION (Minimalistic Version) -->
+<section class="py-5" style="background:#f6f3ee;">
+      <div class="container mb-4">
+           <div class="row align-items-center">
+
+    <!-- Left Line + Title -->
+    <div class="col-lg-6 d-flex align-items-center">
+        <span style="height:1px; width:80px; background:#000; margin-right:20px;"></span>
+
+        <h2 style="
+            font-family:'Times New Roman', serif;
+            font-size:42px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            color:#2f2f2f;
+        ">
+            All Room Types
+        </h2>
+    </div>
+
+    <!-- Right Paragraph -->
+    <div class="col-lg-6">
+        <p style="
+            font-size:16px;
+            color:#555;
+            line-height:1.6;
+        ">
+            Explore our thoughtfully designed rooms — carefully crafted for comfort, style,
+            and a premium hospitality experience at <strong>Stay Orra</strong>.
+        </p>
+    </div>
+
+</div>
+
+        </div>
+    <div class="container">
+
+        <div class="row g-3">
+
+            <!-- 1. Super Deluxe Twin Room -->
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white  rounded overflow-hidden">
+
+                    <img src="https://stayorra.com/images/stay_orra_1.jpg"
+                        class="img-fluid w-100" style="height:230px; object-fit:cover;" alt="">
+
+                    <div class="p-3">
+
+                        <h6 class="fw-bold text-truncate mb-1" style="font-size:14px;">
+                            Super Deluxe Twin Room
+                        </h6>
+                        <small class="text-muted">₹3200 / Night</small>
+
+                        <hr class="my-2">
+
+                        <div class="row text-muted" style="font-size:11px;">
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-bounding-box"></i> Twin Beds
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-binoculars"></i> Window View
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-lightbulb"></i> Modern Light
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-laptop"></i> Workspace
+                            </div>
+
+                            <div class="col-12 d-flex align-items-center gap-1">
+                                <i class="bi bi-person"></i> Best for Solo/Corporate
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Executive Suite -->
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white  rounded overflow-hidden">
+
+                    <img src="https://stayorra.com/images/stay_orra_2.jpg"
+                        class="img-fluid w-100" style="height:230px; object-fit:cover;" alt="">
+
+                    <div class="p-3">
+
+                        <h6 class="fw-bold text-truncate mb-1" style="font-size:14px;">
+                            Executive Suite (City View)
+                        </h6>
+                        <small class="text-muted">₹4500 / Night</small>
+
+                        <hr class="my-2">
+
+                        <div class="row text-muted" style="font-size:11px;">
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-bed"></i> King Bed
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-aspect-ratio"></i> Bigger Room
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-building"></i> City View
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-sofa"></i> Seating Area
+                            </div>
+
+                            <div class="col-12 d-flex align-items-center gap-1">
+                                <i class="bi bi-people"></i> Ideal for Couples
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Premium Suite -->
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white  rounded overflow-hidden">
+
+                    <img src="https://stayorra.com/images/stay_orra_3.jpg"
+                        class="img-fluid w-100" style="height:230px; object-fit:cover;" alt="">
+
+                    <div class="p-3">
+
+                        <h6 class="fw-bold text-truncate mb-1" style="font-size:14px;">
+                            Premium Suite with Steam Bath
+                        </h6>
+                        <small class="text-muted">₹5500 / Night</small>
+
+                        <hr class="my-2">
+
+                        <div class="row text-muted" style="font-size:11px;">
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-aspect-ratio"></i> Spacious
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-cloud-fog"></i> Steam Bath
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-bricks"></i> Premium Interior
+                            </div>
+
+                            <div class="col-12 d-flex align-items-center gap-1">
+                                <i class="bi bi-clock-history"></i> Long Stay
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Presidential Suite -->
+            <div class="col-lg-3 col-md-6">
+                <div class="bg-white  rounded overflow-hidden">
+
+                    <img src="https://stayorra.com/images/stay_orra_4.jpg"
+                        class="img-fluid w-100" style="height:230px; object-fit:cover;" alt="">
+
+                    <div class="p-3">
+
+                        <h6 class="fw-bold text-truncate mb-1" style="font-size:14px;">
+                            Presidential Suite with Jacuzzi
+                        </h6>
+                        <small class="text-muted">₹7000 / Night</small>
+
+                        <hr class="my-2">
+
+                        <div class="row text-muted" style="font-size:11px;">
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-gem"></i> Luxury
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-water"></i> Jacuzzi
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-badge-cc"></i> Premium Bath
+                            </div>
+
+                            <div class="col-12 d-flex align-items-center gap-1">
+                                <i class="bi bi-heart"></i> Honeymoon Perfect
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="latest-offers py-5">
+        <div class="container mb-4">
+            <div class="row align-items-center">
+
+                <!-- Left Line + Title -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <span style="height:1px; width:80px; background:#2f2f2f; margin-right:20px;"></span>
+
+                    <h2 style="
+                    font-family: 'Times New Roman', serif;
+                    font-size:48px;
+                    font-weight:400;
+                    text-transform: uppercase;
+                    letter-spacing:2px;
+                    color:#3a3a3a;
+                ">
+                        LATEST OFFERS
+                    </h2>
+                </div>
+
+                <!-- Right Side Paragraph -->
+                <div class="col-lg-6">
+                    <p style="
+                    font-size:18px;
+                    color:#4d4d4d;
+                    max-width:100%;
+                    line-height:1.6;
+                ">
+                        Discover exclusive new experiences curated especially for your stay at
+                        <strong>STAY ORRA — A Boutique Hotel.</strong>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid px-0">
+
+
+
+            <div class="owl-carousel offers-carousel">
+
+                <!-- Card 1 -->
+                <div class="offer-card">
+                    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/9bf4c8818c3804e893a06cdf2c2d63bbf1c25ab8-700x560.jpg?w=1920"
+                        class="offer-img">
+                    <div class="offer-content">
+                        <h4>SUITE SURPRISES – MEMBER ONLY</h4>
+                        <a href="#" class="offer-more">MORE →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="offer-card">
+                    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/b3bb5c83021054bdeec41479d9c36eeef24e12b6-700x560.jpg?w=1920"
+                        class="offer-img">
+                    <div class="offer-content">
+                        <h4>CYBER MONDAY</h4>
+                        <a href="#" class="offer-more">MORE →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="offer-card">
+                    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/9515b8b50eacf13fc929fefd0d3f1573ba476f76-1400x1120.jpg?w=1920"
+                        class="offer-img">
+                    <div class="offer-content">
+                        <h4>INDIA WITH TAJ</h4>
+                        <a href="#" class="offer-more">MORE →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-offers pt-5 pb-1">
+        <div class="container mb-2">
+            <div class="row align-items-center">
+
+                <!-- Left Line + Title -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <span style="height:1px; width:80px; background:#2f2f2f; margin-right:20px;"></span>
+
+                    <h2 style="
+                    font-family: 'Times New Roman', serif;
+                    font-size:48px;
+                    font-weight:400;
+                    letter-spacing:2px;
+                    color:#3a3a3a;
+                    text-transform: uppercase;
+
+                ">
+                        Signature Dining
+                    </h2>
+                </div>
+
+                <!-- Right Side Paragraph -->
+                <div class="col-lg-6">
+                    <p style="
+                    font-size:18px;
+                    color:#4d4d4d;
+                    max-width:100%;
+                    line-height:1.6;
+                ">
+                        Embark on a journey of exquisite experiences, encompassing impeccable service, sophisticated
+                        ambience and masterful culinary artistry.​
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-2" style="background:#fafafa;">
+        <div class="container">
+
+            <!-- Navigation Arrows -->
+            <!-- <div class="d-flex justify-content-between mb-4">
+            <button class="arrow-btn" onclick="slideBack()">&#8249;</button>
+            <button class="arrow-btn" onclick="slideNext()">&#8250;</button>
+        </div> -->
+
+            <!-- Slider Wrapper -->
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="explore-card">
+                        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/69c467744f7f1694331768d6d611bfc77582e36a-906x972.jpg?w=768"
+                            alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="divider-line"></div>
+                            <h4 class="explore-title">LUXURY ROOMS</h4>
+                        </div>
+                        <p class="explore-text">
+                            Experience contemporary comfort and timeless elegance inside our refined boutique rooms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="explore-card">
+                        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/c0401c93116df10e12fea3bf9ea9662394fc9b80-906x972.jpg?w=768"
+                            alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="divider-line"></div>
+                            <h4 class="explore-title">PREMIUM DINING</h4>
+                        </div>
+                        <p class="explore-text">
+                            Enjoy delightful culinary experiences crafted with rich flavors and world-class hospitality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="explore-card">
+                        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/df050e0b9d06c94045cdbdacce64d23993a69f7a-950x1020.jpg?w=768"
+                            alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="divider-line"></div>
+                            <h4 class="explore-title">SIGNATURE EXPERIENCES</h4>
+                        </div>
+                        <p class="explore-text">
+                            Explore curated Stay Orra activities designed to make your stay truly unforgettable.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="latest-offers pt-5 pb-1">
+        <div class="container mb-2">
+            <div class="row align-items-center">
+
+                <!-- Left Line + Title -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <span style="height:1px; width:80px; background:#2f2f2f; margin-right:20px;"></span>
+
+                    <h2 style="
+                    font-family: 'Times New Roman', serif;
+                    font-size:48px;
+                    font-weight:400;
+                    letter-spacing:2px;
+                    color:#3a3a3a;
+                    text-transform: uppercase;
+
+                ">
+                        EVENTS AND CONFERENCES
+
+                    </h2>
+                </div>
+
+                <!-- Right Side Paragraph -->
+                <div class="col-lg-6">
+                    <p style="
+                    font-size:18px;
+                    color:#4d4d4d;
+                    max-width:100%;
+                    line-height:1.6;
+                ">
+                        Stay Orra elevates every occasion into an awe-inspiring, immersive experience to cherish
+                        forever.
+
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="events-section py-5">
+        <div class="container text-center">
+
+            <!-- Three Cards -->
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <img src="https://stayorra.com/images/stay_orra_5.jpg" class="img-fluid event-img" alt="">
+                        <div class="event-box">
+                            <h4>MEETINGS & CONFERENCES</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <img src="https://stayorra.com/images/stay_orra_6.jpg" class="img-fluid event-img" alt="">
+                        <div class="event-box">
+                            <h4>EVENTS</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <img src="https://stayorra.com/images/stay_orra_9.jpg" class="img-fluid event-img" alt="">
+                        <div class="event-box">
+                            <h4>TIMESLESS WEDDINGS</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-offers pt-5 pb-1">
+        <div class="container mb-2">
+            <div class="row align-items-center">
+
+                <!-- Left Line + Title -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <span style="height:1px; width:80px; background:#2f2f2f; margin-right:20px;"></span>
+
+                    <h2 style="
+                    font-family: 'Times New Roman', serif;
+                    font-size:48px;
+                    font-weight:400;
+                    letter-spacing:2px;
+                    color:#3a3a3a;
+                    text-transform: uppercase;
+
+                ">
+                        J WELLNESS
+                        CIRCLE
+                    </h2>
+                </div>
+
+                <!-- Right Side Paragraph -->
+                <div class="col-lg-6">
+                    <p style="
+                    font-size:18px;
+                    color:#4d4d4d;
+                    max-width:100%;
+                    line-height:1.6;
+                ">
+                        Welcome to a sanctuary that seamlessly blends Indian heritage healing with serene contemporary
+                        comforts for the mind, body and soul.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/364ff44bd95cb1d3fba126a6e904b6a1040b07f0-2880x1155.jpg?w=1920"
+            alt="" class="w-100">
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-4" style="font-family: 'Times New Roman', serif;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- COLUMN 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3 class="fw-bold mb-4" style="letter-spacing:2px;">STAY ORRA</h3>
+
+                    <h6 class="text-uppercase small mb-3">Subscribe for latest updates</h6>
+
+                    <div class="d-flex">
+                        <input type="email" class="form-control bg-transparent text-light border-light"
+                            placeholder="Enter your email">
+                        <button class="btn btn-light ms-2 px-3">Subscribe</button>
+                    </div>
+
+                    <div class="mt-4">
+                        <h6 class="text-uppercase small mb-1">For Bookings Contact</h6>
+                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>7389231021</p>
+                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>7389832021</p>
+                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>7389741021</p>
+                    </div>
+
+                    <div class="mt-3">
+                        <h6 class="text-uppercase small mb-1">Customer Support</h6>
+                        <p class="mb-0"><i class="bi bi-whatsapp me-2"></i>WhatsApp for quick confirmation</p>
+                    </div>
+                </div>
+
+
+                <!-- COLUMN 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-uppercase small mb-4">Location</h6>
+
+                    <p class="mb-1">Stadium Rd, Transport Nagar,</p>
+                    <p class="mb-1">Korba, Chhattisgarh 495677</p>
+                    <p class="mb-2">Convenient for industrial areas, markets <br>and transport hubs.</p>
+
+                    <a href="#" class="text-light text-decoration-underline small">Open in Google Maps</a>
+                </div>
+
+
+                <!-- COLUMN 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-uppercase small mb-4">Quick Links</h6>
+
+                    <p class="mb-1"><a href="#" class="text-light text-decoration-none">Home</a></p>
+                    <p class="mb-1"><a href="#" class="text-light text-decoration-none">Rooms</a></p>
+                    <p class="mb-1"><a href="#" class="text-light text-decoration-none">Dining</a></p>
+                    <p class="mb-1"><a href="#" class="text-light text-decoration-none">Events</a></p>
+                    <p class="mb-1"><a href="#" class="text-light text-decoration-none">Gallery</a></p>
+                    <p class="mb-1"><a href="#" class="text-light text-decoration-none">Contact</a></p>
+                </div>
+
+
+                <!-- COLUMN 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-uppercase small mb-4">Connect With Us</h6>
+
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center small">
+                © 2025 Stay Orra. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let nav = document.getElementById('mainNav');
+            let navLinks = document.querySelectorAll('#navLinks .nav-link');
+            let loginJoin = document.getElementById('loginJoin');
+            let logoText = document.getElementById('logoText');
+
+            if (window.scrollY > 50) {
+                nav.style.background = 'white';
+                nav.style.borderBottom = '1px solid rgb(218, 218, 217)';
+
+
+                navLinks.forEach(link => link.classList.add("changeColor"));
+                loginJoin.style.color = '#ad8b3a';
+                logoText.style.color = '#ad8b3a';
+            } else {
+                nav.style.background = 'transparent';
+                nav.style.boxShadow = 'none';
+
+                navLinks.forEach(link => link.style.color = 'white');
+                loginJoin.style.color = 'white';
+                logoText.style.color = 'white';
+            }
+        });
+    </script>
+    <script>
+        $(".offers-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            smartSpeed: 800,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 1 },
+                768: { items: 2 },
+                992: { items: 3 }
+            }
+        });
+    </script>
+    <script>
+        let slider = document.getElementById("exploreSlider");
+
+        function slideNext() {
+            slider.scrollLeft += 350;
+        }
+
+        function slideBack() {
+            slider.scrollLeft -= 350;
+        }
+    </script>
+
+</body>
+
+</html>

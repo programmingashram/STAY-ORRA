@@ -1,0 +1,225 @@
+  body,
+  html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+
+  .hero-bg {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      animation: slideShow 18s infinite;
+      background-size: cover;
+      background-position: center;
+  }
+
+
+  .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  }
+
+  nav a {
+      font-size: 11px;
+      letter-spacing: 1px;
+  }
+
+  .changeColor {
+      color: rgb(173, 139, 58) !important;
+  }
+
+
+  .latest-offers {
+      background: #fff;
+  }
+
+  .offers-title {
+      font-size: 36px;
+      letter-spacing: 3px;
+      color: #555;
+      font-weight: 400;
+      position: relative;
+  }
+
+  .offer-card {
+      background: #fff;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+      transition: 0.3s;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+
+  .offer-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .offer-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+  }
+
+  .offer-content {
+      padding: 20px;
+      border-top: 1px solid #eee;
+  }
+
+  .offer-content h4 {
+      font-size: 20px;
+      color: #444;
+      font-weight: 500;
+      margin-bottom: 10px;
+  }
+
+  .offer-more {
+      color: #ad8b3a;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-decoration: none;
+  }
+
+  .offer-more:hover {
+      text-decoration: underline;
+  }
+
+
+
+  .explore-card img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 4px;
+  }
+
+  .arrow-btn {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 1px solid #b99656;
+      background: transparent;
+      color: #b99656;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  .arrow-btn:hover {
+      background: #b99656;
+      color: white;
+  }
+
+  .explore-title {
+      font-family: 'Times New Roman', serif;
+      font-size: 24px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: #4a4a4a;
+      margin-top: 25px;
+  }
+
+  .explore-text {
+      color: #555;
+      font-size: 16px;
+      max-width: 320px;
+      margin-top: 12px;
+      line-height: 1.6;
+  }
+
+  .divider-line {
+      height: 1px;
+      width: 70px;
+      background: #8b8b8b;
+      margin-right: 15px;
+  }
+
+  .events-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #2a2a2a;
+  position: relative;
+}
+
+.events-title .line {
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background: #ad8b3a;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.events-subtext {
+  max-width: 700px;
+  margin: 10px auto 0;
+  font-size: 17px;
+  line-height: 26px;
+  color: #555;
+}
+
+.event-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all .4s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+}
+
+.event-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+footer input::placeholder {
+    color: #ccc;
+}
+footer a:hover {
+    color: #ad8b3a !important; /* Golden hover */
+}
+
+
+.event-box {
+  background: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.event-box h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #ad8b3a;
+  margin: 0;
+}
+
+
+  @keyframes slideShow {
+      0% {
+          background-image: url('https://stayorra.com/images/stay_orra_6.jpg');
+      }
+
+      33% {
+          background-image: url('https://stayorra.com/images/stay_orra_2.jpg');
+      }
+
+      66% {
+          background-image: url('https://stayorra.com/images/stay_orra_3.jpg');
+      }
+
+      100% {
+          background-image: url('https://stayorra.com/images/stay_orra_6.jpg');
+      }
+  }

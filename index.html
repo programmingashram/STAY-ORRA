@@ -60,96 +60,89 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg">
-        <div class="hero-overlay"> </div>
-        <!-- Booking Form Positioned Bottom Center -->
-        <div class="container">
-             <!-- <div class="booking-form shadow-lg p-4 rounded-1" style="position:absolute; bottom:306px; left:50%; transform:translateX(-50%); z-index:10; 
-                color: white; backdrop-filter:blur(6px); width:90%; max-width:1100px;">
+   <section class="hero-bg position-relative">
 
-                <div class="row g-3 align-items-center ">
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <h3 class="display-4">Welcome To Korba</h3>
-                            <p>
-                                Stay Orra is a boutique luxury hotel in Korba offering 24 premium rooms, a rooftop pool, gym, multi-cuisine restaurant, banquet hall, and valet parking.
-                            </p>
-                        </div>
-                    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+        <!-- TOP TEXT BOX -->
+        <div class="booking-form shadow-lg p-4 rounded-1 text-white"
+            style="backdrop-filter:blur(6px); width:100%; max-width:1100px; margin:0 auto;padding-top: 80px !important;">
+
+            <div class="text-center">
+                <h3 class="display-5 fw-bold">Welcome To Korba</h3>
+                <p class="mt-2">
+                    Stay Orra is a boutique luxury hotel in Korba offering 24 premium rooms,
+                    rooftop pool, gym, multi-cuisine restaurant, banquet hall and valet parking.
+                </p>
+            </div>
+        </div>
+
+        <!-- BOOKING FORM -->
+        <div class="booking-form shadow-lg p-4 rounded-1 bg-white text-dark"
+            style="width:100%; max-width:1100px; margin:0 auto; margin-top:20px; z-index: 999; position: relative;">
+
+            <div class="text-center mb-2">
+                <h3>Plan Your Perfect Stay</h3>
+            </div>
+
+            <hr>
+
+            <div class="row g-3">
+
+                <!-- Check-in -->
+                <div class="col-md-3 col-6">
+                    <label class="fw-semibold">Check-in</label>
+                    <input type="date" class="form-control rounded-3">
                 </div>
-            </div> -->
 
-            <div class="booking-form shadow-lg p-4 rounded-1" style="position:absolute; bottom:-26px; left:50%; transform:translateX(-50%); z-index:10; 
-                background:white; backdrop-filter:blur(6px); width:90%; max-width:1100px;">
+                <!-- Check-out -->
+                <div class="col-md-3 col-6">
+                    <label class="fw-semibold">Check-out</label>
+                    <input type="date" class="form-control rounded-3">
+                </div>
 
-                <div class="row g-3 align-items-center text-dark">
-                     <div class="col-md-12">
-                        <div class="text-center">
-                            <h3>Plan Your Perfect Stay</h3>
-                        </div>
-                    </div>
-                    <hr>
+                <!-- Adults -->
+                <div class="col-md-2 col-6">
+                    <label class="fw-semibold">Adults</label>
+                    <select class="form-select rounded-3">
+                        <option>1</option><option>2</option><option>3</option><option>4+</option>
+                    </select>
+                </div>
 
-                    <!-- Check-in -->
-                    <div class="col-md-3">
-                        <label class="fw-semibold">Check-in</label>
-                        <input type="date" class="form-control rounded-3">
-                    </div>
+                <!-- Children -->
+                <div class="col-md-2 col-6">
+                    <label class="fw-semibold">Children</label>
+                    <select class="form-select rounded-3">
+                        <option>0</option><option>1</option><option>2</option><option>3+</option>
+                    </select>
+                </div>
 
-                    <!-- Check-out -->
-                    <div class="col-md-3">
-                        <label class="fw-semibold">Check-out</label>
-                        <input type="date" class="form-control rounded-3">
-                    </div>
+                <!-- Room Category -->
+                <div class="col-md-4">
+                    <label class="fw-semibold">Room Category</label>
+                    <select class="form-select rounded-3">
+                        <option>Super Deluxe Twin – ₹3200</option>
+                        <option>Executive Suite – ₹4500</option>
+                        <option>Premium Suite – ₹5500</option>
+                        <option>Presidential Suite – ₹7000</option>
+                    </select>
+                </div>
 
-                    <!-- Adults -->
-                    <div class="col-md-2">
-                        <label class="fw-semibold">Adults</label>
-                        <select class="form-select rounded-3">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4+</option>
-                        </select>
-                    </div>
-
-                    <!-- Children -->
-                    <div class="col-md-2">
-                        <label class="fw-semibold">Children</label>
-                        <select class="form-select rounded-3">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3+</option>
-                        </select>
-                    </div>
-
-                    <!-- Room Category -->
-                    <div class="col-md-4 mt-3">
-                        <label class="fw-semibold">Room Category</label>
-                        <select class="form-select rounded-3">
-                            <option>Super Deluxe Twin Room – ₹3200</option>
-                            <option>Executive Suite (City View) – ₹4500</option>
-                            <option>Premium Suite with Steam Bath – ₹5500</option>
-                            <option>Presidential Suite with Jacuzzi – ₹7000</option>
-                        </select>
-                    </div>
-
-                    <!-- Search Btn -->
-                    <div class="col-md-2 mt-4">
-                        <button class="btn btn-dark w-100 rounded-3 px-4 py-2" style="background:#b99656; border:none;">
-                            <i class="bi bi-search"></i> Search
-                        </button>
-                    </div>
-
+                <!-- Search Btn -->
+                <div class="col-md-2 mt-md-4">
+                    <button class="btn w-100 rounded-3 py-2"
+                        style="background:#b99656; color:white; border:none;">
+                        <i class="bi bi-search"></i> Search
+                    </button>
                 </div>
             </div>
         </div>
 
+    </div>
+</section>
 
-        <!-- Center bottom search button -->
-        <div style="position:absolute; bottom:40px; left:50%; transform:translateX(-50%); z-index:5;"></div>
-    </section>
 
     <!-- Brand Highlight Section -->
     <section class="text-center py-5" style="background:white; color:#4a4a4a;">

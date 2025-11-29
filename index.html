@@ -4,12 +4,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>STAY ORRA - A BOUTIQUE HOTEL</title>
+    <!-- Primary Meta Tags -->
+    <title>STAY ORRA | Best Hotel in Korba, Chhattisgarh | Luxury Rooms & Dining</title>
+    <meta name="description"
+        content="STAY ORRA offers premium rooms, signature dining, gym, pool and modern amenities in Korba, Chhattisgarh. Book your stay for business trips, family visits and comfortable travel experiences.">
+    <meta name="keywords"
+        content="Stay Orra Korba, hotel in Korba, best hotel Korba Chhattisgarh, luxury hotel Korba, Korba hotel booking, premium rooms Korba, dining Korba, accommodation in Korba">
+
+    <meta name="author" content="STAY ORRA, Korba">
+
+    <meta property="og:title" content="STAY ORRA – Premium Hotel in Korba, Chhattisgarh">
+    <meta property="og:description"
+        content="Experience luxury rooms, fine dining, gym, pool, and hospitality at STAY ORRA Korba. Ideal for families, travelers and corporate stays.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://stayorra.com/your-image.jpg">
+    <meta property="og:url" content="https://stayorra.com">
+
+    <meta name="twitter:title" content="STAY ORRA – Best Hotel in Korba">
+    <meta name="twitter:description"
+        content="Luxury rooms, signature dining and top-class amenities in Korba, Chhattisgarh. Book your stay at STAY ORRA.">
+    <meta name="twitter:image" content="https://stayorra.com/your-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="geo.region" content="IN-CT">
+    <meta name="geo.placename" content="Korba, Chhattisgarh">
+    <meta name="geo.position" content="22.3560;82.7501">
+    <meta name="ICBM" content="22.3560, 82.7501">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -60,89 +85,100 @@
     </nav>
 
     <!-- Hero Section -->
-   <section class="hero-bg position-relative">
+    <section class="hero-bg position-relative">
 
-    <div class="hero-overlay"></div>
+        <!-- Background Video -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://assets-cug1-825v2.tajhotels.com/video/wshbtaj.mp4" type="video/mp4">
+        </video>
 
-    <div class="container">
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
 
-        <!-- TOP TEXT BOX -->
-        <div class="booking-form  p-4 rounded-1 text-white"
-            style=" width:100%; max-width:1100px; margin:0 auto;padding-top: 110px !important;  z-index: 999; position: relative;">
+        <div class="container">
 
-            <div class="text-center">
-                <h3 class="display-5 fw-bold">Welcome To Korba</h3>
-                <p class="mt-2">
-                    Stay Orra is a boutique luxury hotel in Korba offering 24 premium rooms,
-                    rooftop pool, gym, multi-cuisine restaurant, banquet hall and valet parking.
-                </p>
+            <!-- TOP TEXT BOX -->
+            <div class="booking-form p-4 rounded-1 text-white"
+                style="width:100%; max-width:1100px; margin:0 auto; padding-top:130px !important; position:relative; z-index:2;">
+
+                <div class="text-center">
+                    <h3 class="display-5 fw-bold">Welcome To Korba</h3>
+                    <p class="mt-2">
+                        Stay Orra is a boutique luxury hotel in Korba offering premium rooms,
+                        rooftop pool, gym, multi-cuisine restaurant, banquet hall and valet parking.
+                    </p>
+                </div>
             </div>
+
+            <!-- BOOKING FORM -->
+            <div class="booking-form shadow-lg p-4 rounded-1 bg-white text-dark"
+                style="width:100%; max-width:1100px; margin:20px auto 0; position:relative; z-index:2;">
+
+                <div class="text-center mb-2">
+                    <h3>Plan Your Perfect Stay</h3>
+                </div>
+
+                <hr>
+
+                <div class="row g-3">
+
+                    <!-- Check-in -->
+                    <div class="col-md-3 col-6">
+                        <label class="fw-semibold">Check-in</label>
+                        <input type="date" class="form-control rounded-3">
+                    </div>
+
+                    <!-- Check-out -->
+                    <div class="col-md-3 col-6">
+                        <label class="fw-semibold">Check-out</label>
+                        <input type="date" class="form-control rounded-3">
+                    </div>
+
+                    <!-- Adults -->
+                    <div class="col-md-2 col-6">
+                        <label class="fw-semibold">Adults</label>
+                        <select class="form-select rounded-3">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4+</option>
+                        </select>
+                    </div>
+
+                    <!-- Children -->
+                    <div class="col-md-2 col-6">
+                        <label class="fw-semibold">Children</label>
+                        <select class="form-select rounded-3">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3+</option>
+                        </select>
+                    </div>
+
+                    <!-- Room Category -->
+                    <div class="col-md-4">
+                        <label class="fw-semibold">Room Category</label>
+                        <select class="form-select rounded-3">
+                            <option>Super Deluxe Twin – ₹3200</option>
+                            <option>Executive Suite – ₹4500</option>
+                            <option>Premium Suite – ₹5500</option>
+                            <option>Presidential Suite – ₹7000</option>
+                        </select>
+                    </div>
+
+                    <!-- Search Btn -->
+                    <div class="col-md-2 mt-md-4">
+                        <button class="btn w-100 rounded-3 py-2" style="background:#b99656; color:white; border:none;">
+                            <i class="bi bi-search"></i> Search
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-
-        <!-- BOOKING FORM -->
-        <div class="booking-form shadow-lg p-4 rounded-1 bg-white text-dark"
-            style="width:100%; max-width:1100px; margin:0 auto; margin-top:20px; z-index: 999; position: relative;">
-
-            <div class="text-center mb-2">
-                <h3>Plan Your Perfect Stay</h3>
-            </div>
-
-            <hr>
-
-            <div class="row g-3">
-
-                <!-- Check-in -->
-                <div class="col-md-3 col-6">
-                    <label class="fw-semibold">Check-in</label>
-                    <input type="date" class="form-control rounded-3">
-                </div>
-
-                <!-- Check-out -->
-                <div class="col-md-3 col-6">
-                    <label class="fw-semibold">Check-out</label>
-                    <input type="date" class="form-control rounded-3">
-                </div>
-
-                <!-- Adults -->
-                <div class="col-md-2 col-6">
-                    <label class="fw-semibold">Adults</label>
-                    <select class="form-select rounded-3">
-                        <option>1</option><option>2</option><option>3</option><option>4+</option>
-                    </select>
-                </div>
-
-                <!-- Children -->
-                <div class="col-md-2 col-6">
-                    <label class="fw-semibold">Children</label>
-                    <select class="form-select rounded-3">
-                        <option>0</option><option>1</option><option>2</option><option>3+</option>
-                    </select>
-                </div>
-
-                <!-- Room Category -->
-                <div class="col-md-4">
-                    <label class="fw-semibold">Room Category</label>
-                    <select class="form-select rounded-3">
-                        <option>Super Deluxe Twin – ₹3200</option>
-                        <option>Executive Suite – ₹4500</option>
-                        <option>Premium Suite – ₹5500</option>
-                        <option>Presidential Suite – ₹7000</option>
-                    </select>
-                </div>
-
-                <!-- Search Btn -->
-                <div class="col-md-2 mt-md-4">
-                    <button class="btn w-100 rounded-3 py-2"
-                        style="background:#b99656; color:white; border:none;">
-                        <i class="bi bi-search"></i> Search
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
+    </section>
 
     <!-- Brand Highlight Section -->
     <section class="text-center py-5" style="background:white; color:#4a4a4a;">
@@ -411,43 +447,66 @@
 
         </div>
         <div class="container-fluid px-0">
-
-
-
             <div class="owl-carousel offers-carousel">
 
-                <!-- Card 1 -->
+                <!-- Dining -->
                 <div class="offer-card">
-                    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/9bf4c8818c3804e893a06cdf2c2d63bbf1c25ab8-700x560.jpg?w=1920"
-                        class="offer-img">
+                    <img src="./assets/images/_K6A8273.jpg" class="offer-img">
                     <div class="offer-content">
-                        <h4>SUITE SURPRISES – MEMBER ONLY</h4>
+                        <h4>Signature Dining Experience</h4>
                         <a href="#" class="offer-more">MORE →</a>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
+                <!-- Gym -->
                 <div class="offer-card">
-                    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/b3bb5c83021054bdeec41479d9c36eeef24e12b6-700x560.jpg?w=1920"
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO1C9UFcD0nKYo2K1D4Vdx7pYnUUgaHvMUm4rsU-RYqK2lSgwv2-UIptRbc-N9lJN6a6UsX972mzouKPxKRCVgLoJsdO61LFg4KF_BZRly0h3q1zwy-iYl7BucxHNUgAEHRWDMFTdCIAl5SHXguIjiE9g=w1316-h878-s-no-gm?authuser=0"
                         class="offer-img">
                     <div class="offer-content">
-                        <h4>CYBER MONDAY</h4>
+                        <h4>Advanced Fitness Studio</h4>
                         <a href="#" class="offer-more">MORE →</a>
                     </div>
                 </div>
 
-                <!-- Card 3 -->
+                <!-- Pools -->
                 <div class="offer-card">
-                    <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/9515b8b50eacf13fc929fefd0d3f1573ba476f76-1400x1120.jpg?w=1920"
-                        class="offer-img">
+                    <img src="./assets/images/_K6A8079.jpg" class="offer-img">
                     <div class="offer-content">
-                        <h4>INDIA WITH TAJ</h4>
+                        <h4>Luxury Poolside Retreat</h4>
+                        <a href="#" class="offer-more">MORE →</a>
+                    </div>
+                </div>
+
+                <!-- Rooms -->
+                <div class="offer-card">
+                    <img src="./assets/images/_K6A8140.jpg" class="offer-img">
+                    <div class="offer-content">
+                        <h4>Premium Rooms & Suites</h4>
+                        <a href="#" class="offer-more">MORE →</a>
+                    </div>
+                </div>
+
+                <!-- Wash Area -->
+                <div class="offer-card">
+                    <img src="./assets/images/_K6A8181.jpg" class="offer-img">
+                    <div class="offer-content">
+                        <h4>Hygienic Wash Facilities</h4>
+                        <a href="#" class="offer-more">MORE →</a>
+                    </div>
+                </div>
+
+                <!-- Rest Room -->
+                <div class="offer-card">
+                    <img src="./assets/images/_K6A8310.jpg" class="offer-img">
+                    <div class="offer-content">
+                        <h4>Comfortable Waiting Rooms</h4>
                         <a href="#" class="offer-more">MORE →</a>
                     </div>
                 </div>
 
             </div>
         </div>
+
     </section>
 
     <section class="latest-offers pt-5 pb-1">
@@ -504,8 +563,7 @@
                 <!-- CARD 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="explore-card">
-                        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/69c467744f7f1694331768d6d611bfc77582e36a-906x972.jpg?w=768"
-                            alt="">
+                        <img src="./assets/images/_K6A8223.jpg" alt="">
                         <div class="d-flex align-items-center mt-3">
                             <div class="divider-line"></div>
                             <h4 class="explore-title">LUXURY ROOMS</h4>
@@ -519,8 +577,7 @@
                 <!-- CARD 2 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="explore-card">
-                        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/c0401c93116df10e12fea3bf9ea9662394fc9b80-906x972.jpg?w=768"
-                            alt="">
+                        <img src="./assets/images/_K6A8271.jpg" alt="">
                         <div class="d-flex align-items-center mt-3">
                             <div class="divider-line"></div>
                             <h4 class="explore-title">PREMIUM DINING</h4>
@@ -602,7 +659,7 @@
                 <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="event-card">
-                        <img src="https://stayorra.com/images/stay_orra_5.jpg" class="img-fluid event-img" alt="">
+                        <img src="./assets/images/_K6A8285.jpg" class="img-fluid event-img" alt="">
                         <div class="event-box">
                             <h4>MEETINGS & CONFERENCES</h4>
                         </div>
@@ -612,7 +669,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-4">
                     <div class="event-card">
-                        <img src="https://stayorra.com/images/stay_orra_6.jpg" class="img-fluid event-img" alt="">
+                        <img src="./assets/images/_K6A8284.jpg" class="img-fluid event-img" alt="">
                         <div class="event-box">
                             <h4>EVENTS</h4>
                         </div>
@@ -622,7 +679,8 @@
                 <!-- Card 3 -->
                 <div class="col-md-4">
                     <div class="event-card">
-                        <img src="https://stayorra.com/images/stay_orra_9.jpg" class="img-fluid event-img" alt="">
+                        <img src="https://cdn.tajhotels.com/images/ocl5w36p/prod5/8458083aed28ec653b7d55ebe021378a6fe40b17-1400x1080.jpg?w=768"
+                            class="img-fluid event-img" alt="">
                         <div class="event-box">
                             <h4>TIMESLESS WEDDINGS</h4>
                         </div>
@@ -694,7 +752,8 @@
                     <div class="d-flex">
                         <input type="email" class="form-control bg-transparent text-light border-light"
                             placeholder="Enter your email">
-                        <button class="btn btn-light ms-2 px-3" style="background:#b99656; border:none; color:white;">Subscribe</button>
+                        <button class="btn btn-light ms-2 px-3"
+                            style="background:#b99656; border:none; color:white;">Subscribe</button>
                     </div>
 
                     <div class="mt-4">

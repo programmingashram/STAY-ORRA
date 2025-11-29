@@ -230,6 +230,19 @@ footer a:hover {
     object-fit: cover;
     z-index: -2;
 }
+.image-bg{
+    z-index: -1;
+    position: relative;
+}
+.hero-img{
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
 
 /* Dark Overlay */
 .hero-overlay {
@@ -260,3 +273,85 @@ footer a:hover {
           background-image: url('https://stayorra.com/images/stay_orra_6.jpg');
       }
   } */
+
+  .icon-circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #dcdcdc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 40px;
+        color: #333;
+        background: rgba(255,255,255,0.9);
+        transition: 0.3s ease;
+    }
+
+    .icon-circle:hover {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+     .custom-input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #666;
+        background: transparent;
+        color: #fff;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .custom-input::placeholder {
+        color: #ddd;
+    }
+
+    .custom-textarea {
+        width: 100%;
+        height: 160px;
+        padding: 12px 15px;
+        border: 1px solid #666;
+        background: transparent;
+        color: #fff;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .custom-textarea::placeholder {
+        color: #ddd;
+    }
+
+    .custom-btn {
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 10px 28px;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+    .custom-btn:hover {
+        background: #fff;
+        color: #000;
+    }
+
+    .image-strip {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    scrollbar-width: none;       /* For Firefox */
+}
+
+.image-strip::-webkit-scrollbar {
+    display: none;               /* For Chrome/Safari */
+}
+
+.image-strip img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}

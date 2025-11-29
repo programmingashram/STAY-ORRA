@@ -3,6 +3,7 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+    font-family: "Cinzel", serif;
   }
 
   .hero-bg {
@@ -27,6 +28,7 @@
   nav a {
       font-size: 11px;
       letter-spacing: 1px;
+      color: white;
   }
 
   .changeColor {
@@ -64,10 +66,16 @@
       object-fit: cover;
   }
 
-  .offer-content {
-      padding: 20px;
-      border-top: 1px solid #eee;
-  }
+.offer-content {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    position: relative;
+    top: -53px;
+    background: white;
+    width: 102%;
+    right: -49px;
+    box-shadow: -6px 10px 24px 0px rgba(0, 0, 0, 0.10);
+}
 
   .offer-content h4 {
       font-size: 20px;
